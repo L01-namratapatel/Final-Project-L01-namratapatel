@@ -1,5 +1,6 @@
 # Final-Project-L01-namratapatel
-gunzip proteomes/*.gz #this will uncompress the proteosomes
+This will uncompress the proteosomes:
+    gunzip proteomes/*.gz 
 cat  proteomes/* > allprotein.fas #this will put all of the proteins into one single file
 makeblastdb -in allprotein.fas -parse_seqids -dbtype prot #this will make a BLAST database
 ncbi-acc-download -F fasta -m protein XP_032239066.1 #this will download the protein as a query sequence
